@@ -19,7 +19,7 @@ You can also just use ssh and disable the gui in the Vagrantfile.
 
 
 ## Customisation
-You can change you keyboad-layout in the provisioning-script (<bootstrap.sh>). The default is *de* for german. You should also be able to change the desktop manager with little effort (a good alternative would be <http://www.xfce.org> for example).
+You can change you keyboad-layout in the provisioning-script ([bootstrap.sh](bootstrap.sh)). The default is *de* for german. You should also be able to change the desktop manager with little effort (a good alternative would be <http://www.xfce.org> for example).
 
 
 ## Troubleshooting
