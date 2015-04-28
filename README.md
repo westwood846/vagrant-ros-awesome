@@ -1,5 +1,7 @@
 # Vagrant ros-awesome
-This is a Vagrant setup for ros, based on the standart **ubuntu/trusty64** Virtualbox box. The provisioning-script installs **ros** (following the instructions here: <http://wiki.ros.org/indigo/Installation/Ubuntu>). It also provides a gui with **awesome** as desktop manager.
+This is a Vagrant setup for ros, based on the standart **ubuntu/trusty64** Virtualbox box. The provisioning-script installs **ros** (following the instructions [here](http://wiki.ros.org/indigo/Installation/Ubuntu>)). It also provides a gui with **awesome** as desktop manager. 
+
+Note that ros also provides [some vagrant base-boxes with everything already installed](https://vagrantcloud.com/shadowrobot), but I found myself wanting some more flexibilty. There is also a [repo that uses puppet to set up ros](https://github.com/esteve/ros-puppet), altough it appears to be outdated and did not work for me.
 
 
 ## Dependencies
