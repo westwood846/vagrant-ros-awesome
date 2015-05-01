@@ -25,6 +25,9 @@ echo "exec awesome" >> /home/vagrant/.xinitrc
 echo "setxkbmap $keyboardlayout" >> /home/vagrant/.bashrc
 apt-get install -y lightdm lightdm-gtk-greeter
 
+### For g++
+apt-get install -y build-essential
+
 ### ros itself
 apt-get install -y ros-indigo-desktop-full
 rosdep init
