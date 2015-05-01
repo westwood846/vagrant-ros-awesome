@@ -12,7 +12,7 @@ wget https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -O - | sudo 
 
 apt-get update
 
-### VBox and desktop
+### VBox, X and awesome
 apt-get install -y xorg awesome virtualbox-guest-dkms virtualbox-guest-utils virtualbox-guest-x11
 VBoxClient --display
 VBoxClient --draganddrop
@@ -23,6 +23,7 @@ cp /etc/X11/xinit/xinitrc /home/vagrant/.xinitrc
 chown vagrant:vagrant /home/vagrant/.xinitrc
 echo "exec awesome" >> /home/vagrant/.xinitrc
 echo "setxkbmap $keyboardlayout" >> /home/vagrant/.bashrc
+apt-get install -y lightdm lightdm-gtk-greeter
 
 ### ros itself
 apt-get install -y ros-indigo-desktop-full
@@ -32,9 +33,10 @@ echo "source /opt/ros/indigo/setup.bash" >> /home/vagrant/.bashrc
 
 sudo apt-get install -y python-rosinstall
 
-### Usability
+### For setting the keyboard layout
 apt-get install -y x11-xkb-utils
 
+echo "Done provisioning, keyboardlayout has been set to $keyboardlayout"
 
-echo "Done provisioning"
-echo "Keyboardlayout has been set to $keyboardlayout"
+echo "Reloading the VM for you"
+sleep 10 && shutdown -r now &
