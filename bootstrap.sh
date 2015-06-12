@@ -40,6 +40,4 @@ sudo apt-get install -y python-rosinstall
 apt-get install -y x11-xkb-utils
 
 echo "Done provisioning, keyboardlayout has been set to $keyboardlayout"
-
-echo "Reloading the VM for you"
-sleep 10 && shutdown -r now &
+echo "Windowmanager-autostart will be available after restart."
